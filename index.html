@@ -4,45 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Leonardo Arnold — estudante de Engenharia de Software e desenvolvedor Full Stack em formação.">
+    <meta name="author" content="Leonardo Arnold">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0b0d0c">
     <title>Leonardo Arnold | Desenvolvedor Full Stack</title>
 
+    <link rel="canonical" href="https://leonardoarnold.github.io/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://leonardoarnold.github.io/">
+    <meta property="og:site_name" content="Leonardo Arnold — Portfólio">
+    <meta property="og:title" content="Leonardo Arnold | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Portfólio de Leonardo Arnold — estudante de Engenharia de Software e desenvolvedor Full Stack em formação.">
+    <meta property="og:image" content="https://leonardoarnold.github.io/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Leonardo Arnold | Desenvolvedor Full Stack">
+    <meta name="twitter:description" content="Portfólio de Leonardo Arnold — estudante de Engenharia de Software e desenvolvedor Full Stack em formação.">
+    <meta name="twitter:image" content="https://leonardoarnold.github.io/img/og-image.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+
     <div class="site-shell">
         <aside class="sidebar">
             <div class="sidebar-inner">
                 <div>
-                    <div class="brand-mark">LA</div>
+                    <div class="brand-mark" aria-hidden="true">LA</div>
                     <h1 class="sidebar-name">Leonardo Arnold</h1>
                     <p class="sidebar-role">Desenvolvedor <span>Full Stack</span> em formação.</p>
                     <p class="sidebar-education">Engenharia de Software <strong>• 2026</strong></p>
                 </div>
 
                 <div class="sidebar-profile">
-                    <img src="img/profile.png" alt="Leonardo Arnold" class="profile-image">
+                    <picture>
+                        <source srcset="img/profile.webp" type="image/webp">
+                        <img src="img/profile.jpg" alt="Foto de Leonardo Arnold" class="profile-image" width="150" height="150" fetchpriority="high" decoding="async">
+                    </picture>
                 </div>
 
                 <div class="sidebar-socials" aria-label="Redes sociais">
-                    <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://www.instagram.com/leonardoarnold.pr/" target="_blank" rel="noopener" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github" aria-hidden="true"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></a>
+                    <a href="https://www.instagram.com/leonardoarnold.pr/" target="_blank" rel="noopener" aria-label="Instagram"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a>
                 </div>
 
                 <div class="sidebar-divider"></div>
 
                 <div class="sidebar-contact">
                     <a href="mailto:leonardobandasshow@gmail.com">
-                        <ion-icon name="mail-outline"></ion-icon>
+                        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
                         <span>leonardobandasshow@gmail.com</span>
                     </a>
                     <a href="https://wa.me/5545998237161" target="_blank" rel="noopener" class="whatsapp-link">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
                         <span>Falar comigo</span>
                     </a>
                 </div>
@@ -58,36 +90,69 @@
 
         <main class="content">
             <section id="sobre" class="hero section-anchor">
-                <div class="hero-copy">
-                    <p class="eyebrow"><span></span> PORTFÓLIO • DESENVOLVIMENTO WEB</p>
-                    <h2>Leonardo <span>Arnold</span></h2>
-                    <p class="hero-title">Desenvolvedor Full Stack em formação</p>
-                    <p class="hero-text">
-                        Sou estudante de Engenharia de Software e desenvolvo aplicações web completas,
-                        participando desde o entendimento do problema e dos requisitos até a implementação,
-                        testes e publicação.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projeto" class="button button-primary"><ion-icon name="arrow-down-outline"></ion-icon> Conhecer projeto</a>
-                        <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" class="button button-outline"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+                <div class="hero-grid">
+                    <div class="hero-copy" data-reveal>
+                        <p class="eyebrow"><span></span> PORTFÓLIO • DESENVOLVIMENTO WEB</p>
+                        <h2>Leonardo <span>Arnold</span></h2>
+                        <p class="hero-title">Desenvolvedor Full Stack em formação</p>
+                        <p class="hero-text">
+                            Sou estudante de Engenharia de Software e desenvolvo aplicações web completas,
+                            participando desde o entendimento do problema e dos requisitos até a implementação,
+                            testes e publicação.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projeto" class="button button-primary"><ion-icon name="arrow-down-outline" aria-hidden="true"></ion-icon> Conhecer projeto</a>
+                            <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" class="button button-outline"><ion-icon name="logo-github" aria-hidden="true"></ion-icon> GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-card" data-reveal>
+                        <div class="hero-card-top">
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                        </div>
+                        <div class="code-lines" aria-hidden="true">
+                            <p><span class="code-purple">const</span> developer = <span class="code-green">"Leonardo Arnold"</span>;</p>
+                            <p><span class="code-purple">const</span> focus = [<span class="code-green">"Web"</span>, <span class="code-green">"Python"</span>, <span class="code-green">"React"</span>];</p>
+                            <p><span class="code-purple">const</span> project = <span class="code-green">"El Patrón"</span>;</p>
+                            <p class="code-blank"></p>
+                            <p><span class="code-blue">build</span>(project);</p>
+                            <p><span class="code-blue">test</span>(project);</p>
+                            <p><span class="code-blue">deploy</span>(project);</p>
+                            <p class="code-comment">// projeto real em produção</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="hero-card">
-                    <div class="hero-card-top">
-                        <span class="terminal-dot"></span>
-                        <span class="terminal-dot"></span>
-                        <span class="terminal-dot"></span>
+                <div class="process-strip" data-reveal>
+                    <div class="process-step">
+                        <span class="process-num">01</span>
+                        <div>
+                            <strong>Planejamento</strong>
+                            <p>Entendimento do problema, dos requisitos e modelagem dos dados.</p>
+                        </div>
                     </div>
-                    <div class="code-lines" aria-hidden="true">
-                        <p><span class="code-purple">const</span> developer = <span class="code-green">"Leonardo Arnold"</span>;</p>
-                        <p><span class="code-purple">const</span> focus = [<span class="code-green">"Web"</span>, <span class="code-green">"Python"</span>, <span class="code-green">"React"</span>];</p>
-                        <p><span class="code-purple">const</span> project = <span class="code-green">"El Patrón"</span>;</p>
-                        <p class="code-blank"></p>
-                        <p><span class="code-blue">build</span>(project);</p>
-                        <p><span class="code-blue">test</span>(project);</p>
-                        <p><span class="code-blue">deploy</span>(project);</p>
-                        <p class="code-comment">// projeto real em produção</p>
+                    <div class="process-step">
+                        <span class="process-num">02</span>
+                        <div>
+                            <strong>Desenvolvimento</strong>
+                            <p>Implementação full stack, com frontend e backend integrados.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <span class="process-num">03</span>
+                        <div>
+                            <strong>Testes</strong>
+                            <p>Testes automatizados e revisão antes de cada entrega.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <span class="process-num">04</span>
+                        <div>
+                            <strong>Deploy</strong>
+                            <p>Publicação, monitoramento e rotina de backup em produção.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -103,7 +168,7 @@
                 </div>
 
                 <div class="project-intro">
-                    <div class="project-description">
+                    <div class="project-description" data-reveal>
                         <p class="lead">
                             Sistema web desenvolvido para a hamburgueria e conveniência <strong>El Patrón</strong>,
                             em São Miguel do Iguaçu/PR.
@@ -115,60 +180,60 @@
                         </p>
                         <div class="project-actions">
                             <a class="button button-primary" href="https://elpatronconveniencia.com.br/" target="_blank" rel="noopener">
-                                <ion-icon name="open-outline"></ion-icon> Acessar sistema
+                                <ion-icon name="open-outline" aria-hidden="true"></ion-icon> Acessar sistema
                             </a>
                             <a class="button button-outline" href="https://github.com/LeonardoArnold/ElpatronCardapio" target="_blank" rel="noopener">
-                                <ion-icon name="logo-github"></ion-icon> Código no GitHub
+                                <ion-icon name="logo-github" aria-hidden="true"></ion-icon> Código no GitHub
                             </a>
                         </div>
                     </div>
 
-                    <div class="project-facts">
+                    <div class="project-facts" data-reveal>
                         <div class="fact">
-                            <span class="fact-icon"><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                            <span class="fact-icon"><ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon></span>
                             <div><strong>Cardápio responsivo</strong><span>Experiência pensada para o cliente no celular.</span></div>
                         </div>
                         <div class="fact">
-                            <span class="fact-icon"><ion-icon name="settings-outline"></ion-icon></span>
+                            <span class="fact-icon"><ion-icon name="settings-outline" aria-hidden="true"></ion-icon></span>
                             <div><strong>Painel administrativo</strong><span>Gestão e operação do sistema.</span></div>
                         </div>
                         <div class="fact">
-                            <span class="fact-icon"><ion-icon name="server-outline"></ion-icon></span>
+                            <span class="fact-icon"><ion-icon name="server-outline" aria-hidden="true"></ion-icon></span>
                             <div><strong>Infraestrutura própria</strong><span>Aplicação publicada em VPS com Docker.</span></div>
                         </div>
                         <div class="fact">
-                            <span class="fact-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                            <span class="fact-icon"><ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon></span>
                             <div><strong>Testes e observabilidade</strong><span>Automação, monitoramento e rotina de backup.</span></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="architecture-card">
+                <div class="architecture-card" data-reveal>
                     <div class="architecture-heading">
                         <p class="section-kicker">VISÃO TÉCNICA</p>
                         <h3>Como o projeto é estruturado</h3>
                     </div>
                     <div class="architecture-flow">
                         <div class="architecture-node">
-                            <span class="node-icon"><ion-icon name="desktop-outline"></ion-icon></span>
+                            <span class="node-icon"><ion-icon name="desktop-outline" aria-hidden="true"></ion-icon></span>
                             <strong>Frontend</strong>
                             <small>React 19 + Vite</small>
                         </div>
-                        <span class="flow-arrow">→</span>
+                        <span class="flow-arrow" aria-hidden="true">→</span>
                         <div class="architecture-node">
-                            <span class="node-icon"><ion-icon name="code-slash-outline"></ion-icon></span>
+                            <span class="node-icon"><ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon></span>
                             <strong>Backend / API</strong>
                             <small>Python + Flask</small>
                         </div>
-                        <span class="flow-arrow">→</span>
+                        <span class="flow-arrow" aria-hidden="true">→</span>
                         <div class="architecture-node">
-                            <span class="node-icon"><ion-icon name="server-outline"></ion-icon></span>
+                            <span class="node-icon"><ion-icon name="server-outline" aria-hidden="true"></ion-icon></span>
                             <strong>Banco</strong>
                             <small>PostgreSQL 17</small>
                         </div>
-                        <span class="flow-arrow">→</span>
+                        <span class="flow-arrow" aria-hidden="true">→</span>
                         <div class="architecture-node">
-                            <span class="node-icon"><ion-icon name="cloud-outline"></ion-icon></span>
+                            <span class="node-icon"><ion-icon name="cloud-outline" aria-hidden="true"></ion-icon></span>
                             <strong>Produção</strong>
                             <small>Docker + VPS + Caddy</small>
                         </div>
@@ -181,8 +246,8 @@
                 </div>
 
                 <div class="details-grid">
-                    <article class="detail-card">
-                        <div class="detail-icon"><ion-icon name="construct-outline"></ion-icon></div>
+                    <article class="detail-card" data-reveal>
+                        <div class="detail-icon"><ion-icon name="construct-outline" aria-hidden="true"></ion-icon></div>
                         <div>
                             <p class="section-kicker">ENGENHARIA</p>
                             <h3>Projeto pensado para produção</h3>
@@ -192,8 +257,8 @@
                             </p>
                         </div>
                     </article>
-                    <article class="detail-card">
-                        <div class="detail-icon"><ion-icon name="rocket-outline"></ion-icon></div>
+                    <article class="detail-card" data-reveal>
+                        <div class="detail-icon"><ion-icon name="rocket-outline" aria-hidden="true"></ion-icon></div>
                         <div>
                             <p class="section-kicker">RESULTADO</p>
                             <h3>Aplicação real e publicada</h3>
@@ -213,15 +278,15 @@
                         </div>
                     </div>
                     <div class="stack-grid">
-                        <article class="stack-card"><span>Backend / API</span><strong>Python 3.11</strong><small>Flask 3.1 • Flask-SQLAlchemy • Flask-Login • Flask-WTF</small></article>
-                        <article class="stack-card"><span>Frontend</span><strong>React 19</strong><small>Vite</small></article>
-                        <article class="stack-card"><span>Banco de dados</span><strong>PostgreSQL 17</strong><small>Persistência da aplicação</small></article>
-                        <article class="stack-card"><span>Migrations</span><strong>Flask-Migrate</strong><small>Alembic</small></article>
-                        <article class="stack-card"><span>Servidor / TLS</span><strong>Caddy 2</strong><small>HTTPS automático • HTTP/2</small></article>
-                        <article class="stack-card"><span>Infraestrutura</span><strong>Docker Compose</strong><small>VPS Hostinger • Ubuntu 24.04</small></article>
-                        <article class="stack-card"><span>Observabilidade</span><strong>Sentry</strong><small>Erros da aplicação e monitoramento</small></article>
-                        <article class="stack-card"><span>Backup</span><strong>pg_dump</strong><small>Retenção • Backblaze B2</small></article>
-                        <article class="stack-card"><span>Testes / CI</span><strong>Pytest</strong><small>Vitest • Playwright • GitHub Actions</small></article>
+                        <article class="stack-card" data-reveal><span>Backend / API</span><strong>Python 3.11</strong><small>Flask 3.1 • Flask-SQLAlchemy • Flask-Login • Flask-WTF</small></article>
+                        <article class="stack-card" data-reveal><span>Frontend</span><strong>React 19</strong><small>Vite</small></article>
+                        <article class="stack-card" data-reveal><span>Banco de dados</span><strong>PostgreSQL 17</strong><small>Persistência da aplicação</small></article>
+                        <article class="stack-card" data-reveal><span>Migrations</span><strong>Flask-Migrate</strong><small>Alembic</small></article>
+                        <article class="stack-card" data-reveal><span>Servidor / TLS</span><strong>Caddy 2</strong><small>HTTPS automático • HTTP/2</small></article>
+                        <article class="stack-card" data-reveal><span>Infraestrutura</span><strong>Docker Compose</strong><small>VPS Hostinger • Ubuntu 24.04</small></article>
+                        <article class="stack-card" data-reveal><span>Observabilidade</span><strong>Sentry</strong><small>Erros da aplicação e monitoramento</small></article>
+                        <article class="stack-card" data-reveal><span>Backup</span><strong>pg_dump</strong><small>Retenção • Backblaze B2</small></article>
+                        <article class="stack-card" data-reveal><span>Testes / CI</span><strong>Pytest</strong><small>Vitest • Playwright • GitHub Actions</small></article>
                     </div>
                 </div>
             </section>
@@ -236,36 +301,36 @@
                 </div>
 
                 <div class="skills-grid">
-                    <article class="skill-card">
+                    <article class="skill-card" data-reveal>
                         <div class="skill-heading"><span>01</span><h3>Front-End</h3></div>
                         <div class="skill-icons">
-                            <div><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
-                            <div><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
-                            <div><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                            <div><i class="devicon-react-original colored"></i><span>React</span></div>
+                            <div><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML5</span></div>
+                            <div><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS3</span></div>
+                            <div><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span>JavaScript</span></div>
+                            <div><i class="devicon-react-original colored" aria-hidden="true"></i><span>React</span></div>
                         </div>
                     </article>
-                    <article class="skill-card">
+                    <article class="skill-card" data-reveal>
                         <div class="skill-heading"><span>02</span><h3>Back-End</h3></div>
                         <div class="skill-icons">
-                            <div><i class="devicon-python-plain colored"></i><span>Python</span></div>
-                            <div><i class="devicon-flask-original"></i><span>Flask</span></div>
+                            <div><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></div>
+                            <div><i class="devicon-flask-original" aria-hidden="true"></i><span>Flask</span></div>
                         </div>
                     </article>
-                    <article class="skill-card">
+                    <article class="skill-card" data-reveal>
                         <div class="skill-heading"><span>03</span><h3>Banco & Infra</h3></div>
                         <div class="skill-icons">
-                            <div><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
-                            <div><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-                            <div><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
-                            <div><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                            <div><i class="devicon-postgresql-plain colored" aria-hidden="true"></i><span>PostgreSQL</span></div>
+                            <div><i class="devicon-docker-plain colored" aria-hidden="true"></i><span>Docker</span></div>
+                            <div><i class="devicon-linux-plain colored" aria-hidden="true"></i><span>Linux</span></div>
+                            <div><i class="devicon-git-plain colored" aria-hidden="true"></i><span>Git</span></div>
                         </div>
                     </article>
                 </div>
             </section>
 
             <section id="contato" class="section section-anchor contact-section">
-                <div class="contact-card">
+                <div class="contact-card" data-reveal>
                     <div>
                         <p class="section-kicker">CONTATO</p>
                         <h2>Vamos conversar?</h2>
@@ -275,10 +340,10 @@
                         </p>
                     </div>
                     <div class="contact-actions">
-                        <a href="https://wa.me/5545998237161" target="_blank" rel="noopener"><ion-icon name="logo-whatsapp"></ion-icon><span>WhatsApp</span></a>
-                        <a href="mailto:leonardobandasshow@gmail.com"><ion-icon name="mail-outline"></ion-icon><span>E-mail</span></a>
-                        <a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener"><ion-icon name="logo-linkedin"></ion-icon><span>LinkedIn</span></a>
-                        <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span>GitHub</span></a>
+                        <a href="https://wa.me/5545998237161" target="_blank" rel="noopener"><ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon><span>WhatsApp</span></a>
+                        <a href="mailto:leonardobandasshow@gmail.com"><ion-icon name="mail-outline" aria-hidden="true"></ion-icon><span>E-mail</span></a>
+                        <a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon><span>LinkedIn</span></a>
+                        <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener"><ion-icon name="logo-github" aria-hidden="true"></ion-icon><span>GitHub</span></a>
                     </div>
                 </div>
                 <footer>Leonardo Arnold <span>•</span> Engenharia de Software • 2026</footer>
@@ -288,5 +353,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -32,8 +32,16 @@ O sistema possui cardápio para o cliente, gestão de pedidos e painel administr
 
 ## Tecnologias do portfólio
 
-HTML5, CSS3, JavaScript, Devicon e Ionicons.
+HTML5, CSS3, JavaScript (vanilla, `js/main.js`), Devicon e Ionicons.
+
+## Recursos
+
+- **Performance:** imagens em WebP com fallback JPEG (foto de perfil reduzida de ~1,3 MB para ~24 KB), `preconnect` para as fontes e CDNs.
+- **SEO:** meta tags Open Graph e Twitter Card, imagem de compartilhamento própria (`img/og-image.jpg`), `robots.txt`, `sitemap.xml` e URL canônica.
+- **PWA-lite:** favicon em SVG + PNG + ICO, `apple-touch-icon` e `site.webmanifest`.
+- **Acessibilidade:** link "pular para o conteúdo", foco visível no teclado, ícones decorativos com `aria-hidden`, navegação ativa com `aria-current` e respeito a `prefers-reduced-motion`.
+- **Interatividade:** destaque do item de navegação conforme a seção visível e animação sutil de entrada ao rolar a página (`js/main.js`, com IntersectionObserver e fallback caso o navegador não suporte).
 
 ## Publicação
 
-Este projeto é compatível com **GitHub Pages**. Basta publicar o conteúdo do repositório `LeonardoArnold.github.io`.
+Este projeto é compatível com **GitHub Pages**. Basta publicar o conteúdo do repositório `LeonardoArnold.github.io`. Antes de publicar, atualize a URL em `sitemap.xml`, `robots.txt` e nas meta tags Open Graph do `index.html` caso o domínio seja diferente de `leonardoarnold.github.io`.
