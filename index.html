@@ -3,197 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Leonardo Arnold — Desenvolvedor Full Stack em formação.">
+    <meta name="description" content="Portfólio de Leonardo Arnold — estudante de Engenharia de Software e desenvolvedor Full Stack em formação.">
+    <meta name="theme-color" content="#0b0d0c">
     <title>Leonardo Arnold | Desenvolvedor Full Stack</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Leonardo Arnold</h2>
-            <img id="bio-image" src="img/profile.png" alt="Leonardo Arnold">
-            <p>Desenvolvedor <span class="highlight">Full Stack</span> em formação.</p>
-            <p id="welcome-text">Engenharia de Software • 2026</p>
+    <div class="site-shell">
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div>
+                    <div class="brand-mark">LA</div>
+                    <h1 class="sidebar-name">Leonardo Arnold</h1>
+                    <p class="sidebar-role">Desenvolvedor <span>Full Stack</span> em formação.</p>
+                    <p class="sidebar-education">Engenharia de Software <strong>• 2026</strong></p>
+                </div>
 
-            <ul id="social-container">
-                <li><a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/leonardoarnold.pr/" target="_blank" rel="noopener" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            </ul>
+                <div class="sidebar-profile">
+                    <img src="img/profile.png" alt="Leonardo Arnold" class="profile-image">
+                </div>
 
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon>
-                <a href="mailto:leonardobandasshow@gmail.com">leonardobandasshow@gmail.com</a>
+                <div class="sidebar-socials" aria-label="Redes sociais">
+                    <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.instagram.com/leonardoarnold.pr/" target="_blank" rel="noopener" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <div class="sidebar-contact">
+                    <a href="mailto:leonardobandasshow@gmail.com">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>leonardobandasshow@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/5545998237161" target="_blank" rel="noopener" class="whatsapp-link">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <span>Falar comigo</span>
+                    </a>
+                </div>
+
+                <nav class="sidebar-nav" aria-label="Navegação principal">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projeto">Projeto</a>
+                    <a href="#tecnologias">Tecnologias</a>
+                    <a href="#contato">Contato</a>
+                </nav>
             </div>
-
-            <a class="sidebar-whatsapp" href="https://wa.me/5545998237161" target="_blank" rel="noopener">
-                <ion-icon name="logo-whatsapp"></ion-icon> Falar comigo
-            </a>
         </aside>
 
-        <section id="about-container">
-            <header class="hero">
-                <span class="eyebrow">PORTFÓLIO • DESENVOLVIMENTO WEB</span>
-                <h1 id="name">Leonardo Arnold</h1>
-                <p id="title"><span class="highlight">Desenvolvedor Full Stack em formação</span></p>
-                <p class="description">
-                    Sou estudante de Engenharia de Software e desenvolvo aplicações web completas,
-                    participando desde o entendimento do problema e dos requisitos até a implementação,
-                    testes e publicação.
-                </p>
-                <p class="description">
-                    Meu principal projeto é o <strong>El Patrón</strong>, um sistema real de cardápio digital
-                    e gestão de pedidos desenvolvido para uma hamburgueria e conveniência de São Miguel do Iguaçu/PR.
-                </p>
-                <div class="hero-actions">
-                    <a href="#project" class="btn-primary"><ion-icon name="code-slash-outline"></ion-icon> Ver projeto</a>
-                    <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" class="btn-secondary"><ion-icon name="logo-github"></ion-icon> GitHub</a>
-                </div>
-            </header>
-
-            <section id="project" class="section project-section">
-                <div class="section-heading">
-                    <span class="section-kicker">PROJETO EM DESTAQUE</span>
-                    <h2>El Patrón — Sistema de Cardápio Digital</h2>
-                    <span class="status"><span></span> Projeto publicado</span>
+        <main class="content">
+            <section id="sobre" class="hero section-anchor">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span></span> PORTFÓLIO • DESENVOLVIMENTO WEB</p>
+                    <h2>Leonardo <span>Arnold</span></h2>
+                    <p class="hero-title">Desenvolvedor Full Stack em formação</p>
+                    <p class="hero-text">
+                        Sou estudante de Engenharia de Software e desenvolvo aplicações web completas,
+                        participando desde o entendimento do problema e dos requisitos até a implementação,
+                        testes e publicação.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projeto" class="button button-primary"><ion-icon name="arrow-down-outline"></ion-icon> Conhecer projeto</a>
+                        <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener" class="button button-outline"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+                    </div>
                 </div>
 
-                <div class="project-grid">
-                    <div class="project-main">
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                    </div>
+                    <div class="code-lines" aria-hidden="true">
+                        <p><span class="code-purple">const</span> developer = <span class="code-green">"Leonardo Arnold"</span>;</p>
+                        <p><span class="code-purple">const</span> focus = [<span class="code-green">"Web"</span>, <span class="code-green">"Python"</span>, <span class="code-green">"React"</span>];</p>
+                        <p><span class="code-purple">const</span> project = <span class="code-green">"El Patrón"</span>;</p>
+                        <p class="code-blank"></p>
+                        <p><span class="code-blue">build</span>(project);</p>
+                        <p><span class="code-blue">test</span>(project);</p>
+                        <p><span class="code-blue">deploy</span>(project);</p>
+                        <p class="code-comment">// projeto real em produção</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projeto" class="section section-anchor project-section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">PROJETO EM DESTAQUE</p>
+                        <h2>El Patrón</h2>
+                        <p class="section-subtitle">Sistema de cardápio digital e gestão de pedidos</p>
+                    </div>
+                    <span class="project-status"><i></i> Publicado</span>
+                </div>
+
+                <div class="project-intro">
+                    <div class="project-description">
                         <p class="lead">
-                            Sistema web de cardápio digital e gestão de pedidos para a hamburgueria e conveniência
-                            <strong>El Patrón</strong>, em São Miguel do Iguaçu/PR.
+                            Sistema web desenvolvido para a hamburgueria e conveniência <strong>El Patrón</strong>,
+                            em São Miguel do Iguaçu/PR.
                         </p>
                         <p>
                             O cliente monta o pedido pelo celular e a operação conta com um painel administrativo
-                            para gerenciamento. O projeto foi pensado como uma aplicação real, com backend, API,
-                            banco de dados, frontend separado e infraestrutura de produção.
+                            para gerenciamento. O projeto foi pensado como uma aplicação real, com frontend separado,
+                            backend/API, banco de dados e infraestrutura de produção.
                         </p>
-
                         <div class="project-actions">
-                            <a class="btn-primary" href="https://elpatronconveniencia.com.br/" target="_blank" rel="noopener">
+                            <a class="button button-primary" href="https://elpatronconveniencia.com.br/" target="_blank" rel="noopener">
                                 <ion-icon name="open-outline"></ion-icon> Acessar sistema
                             </a>
-                            <a class="btn-secondary" href="https://github.com/LeonardoArnold/ElpatronCardapio" target="_blank" rel="noopener">
+                            <a class="button button-outline" href="https://github.com/LeonardoArnold/ElpatronCardapio" target="_blank" rel="noopener">
                                 <ion-icon name="logo-github"></ion-icon> Código no GitHub
                             </a>
                         </div>
-
-                        <div class="project-highlights">
-                            <article>
-                                <ion-icon name="phone-portrait-outline"></ion-icon>
-                                <div><strong>Cardápio responsivo</strong><span>Experiência para o cliente pelo celular.</span></div>
-                            </article>
-                            <article>
-                                <ion-icon name="settings-outline"></ion-icon>
-                                <div><strong>Painel administrativo</strong><span>Gestão e operação do sistema.</span></div>
-                            </article>
-                            <article>
-                                <ion-icon name="server-outline"></ion-icon>
-                                <div><strong>Infraestrutura própria</strong><span>Aplicação publicada em VPS com Docker.</span></div>
-                            </article>
-                            <article>
-                                <ion-icon name="shield-checkmark-outline"></ion-icon>
-                                <div><strong>Testes e observabilidade</strong><span>Testes automatizados e monitoramento.</span></div>
-                            </article>
-                        </div>
                     </div>
 
-                    <aside class="project-card">
-                        <div class="browser-bar"><span></span><span></span><span></span><small>elpatronconveniencia.com.br</small></div>
-                        <div class="project-card-content">
-                            <span class="project-label">STACK</span>
-                            <div class="stack-mini">
-                                <span>Python</span><span>Flask</span><span>React</span><span>PostgreSQL</span>
-                                <span>Docker</span><span>Caddy</span><span>Pytest</span><span>Playwright</span>
-                            </div>
-                            <div class="mini-stat"><strong>Real</strong><span>projeto desenvolvido para negócio local</span></div>
-                            <div class="mini-stat"><strong>Full Stack</strong><span>frontend + API + banco + infraestrutura</span></div>
+                    <div class="project-facts">
+                        <div class="fact">
+                            <span class="fact-icon"><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                            <div><strong>Cardápio responsivo</strong><span>Experiência pensada para o cliente no celular.</span></div>
                         </div>
-                    </aside>
-                </div>
-
-                <div class="project-detail-grid">
-                    <div>
-                        <h3><ion-icon name="layers-outline"></ion-icon> Arquitetura</h3>
-                        <p>
-                            O backend é uma aplicação monolítica em Flask com painel administrativo e API.
-                            O cardápio do cliente é desenvolvido em React e o PostgreSQL armazena os dados.
-                            Em produção, os componentes são executados em containers Docker, com o Caddy na frente
-                            fazendo HTTPS e encaminhamento das requisições.
-                        </p>
-                    </div>
-                    <div>
-                        <h3><ion-icon name="construct-outline"></ion-icon> Engenharia</h3>
-                        <p>
-                            O projeto utiliza migrations, testes automatizados, CI, monitoramento de erros e rotina
-                            de backup. A documentação do repositório também registra comandos para ambiente local,
-                            testes e operação.
-                        </p>
+                        <div class="fact">
+                            <span class="fact-icon"><ion-icon name="settings-outline"></ion-icon></span>
+                            <div><strong>Painel administrativo</strong><span>Gestão e operação do sistema.</span></div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon"><ion-icon name="server-outline"></ion-icon></span>
+                            <div><strong>Infraestrutura própria</strong><span>Aplicação publicada em VPS com Docker.</span></div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                            <div><strong>Testes e observabilidade</strong><span>Automação, monitoramento e rotina de backup.</span></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="stack-section">
-                    <h3><ion-icon name="code-working-outline"></ion-icon> Stack utilizada</h3>
+                <div class="architecture-card">
+                    <div class="architecture-heading">
+                        <p class="section-kicker">VISÃO TÉCNICA</p>
+                        <h3>Como o projeto é estruturado</h3>
+                    </div>
+                    <div class="architecture-flow">
+                        <div class="architecture-node">
+                            <span class="node-icon"><ion-icon name="desktop-outline"></ion-icon></span>
+                            <strong>Frontend</strong>
+                            <small>React 19 + Vite</small>
+                        </div>
+                        <span class="flow-arrow">→</span>
+                        <div class="architecture-node">
+                            <span class="node-icon"><ion-icon name="code-slash-outline"></ion-icon></span>
+                            <strong>Backend / API</strong>
+                            <small>Python + Flask</small>
+                        </div>
+                        <span class="flow-arrow">→</span>
+                        <div class="architecture-node">
+                            <span class="node-icon"><ion-icon name="server-outline"></ion-icon></span>
+                            <strong>Banco</strong>
+                            <small>PostgreSQL 17</small>
+                        </div>
+                        <span class="flow-arrow">→</span>
+                        <div class="architecture-node">
+                            <span class="node-icon"><ion-icon name="cloud-outline"></ion-icon></span>
+                            <strong>Produção</strong>
+                            <small>Docker + VPS + Caddy</small>
+                        </div>
+                    </div>
+                    <p class="architecture-note">
+                        O backend é uma aplicação monolítica em Flask com painel administrativo e API. O PostgreSQL
+                        armazena os dados e os componentes são executados em containers Docker. O Caddy fica na frente
+                        da aplicação, cuidando de HTTPS e encaminhamento das requisições.
+                    </p>
+                </div>
+
+                <div class="details-grid">
+                    <article class="detail-card">
+                        <div class="detail-icon"><ion-icon name="construct-outline"></ion-icon></div>
+                        <div>
+                            <p class="section-kicker">ENGENHARIA</p>
+                            <h3>Projeto pensado para produção</h3>
+                            <p>
+                                O projeto utiliza migrations, testes automatizados, CI, monitoramento de erros e rotina
+                                de backup. A documentação do repositório registra comandos para ambiente local, testes e operação.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="detail-card">
+                        <div class="detail-icon"><ion-icon name="rocket-outline"></ion-icon></div>
+                        <div>
+                            <p class="section-kicker">RESULTADO</p>
+                            <h3>Aplicação real e publicada</h3>
+                            <p>
+                                O sistema foi desenvolvido para um negócio local e está disponível em domínio próprio,
+                                reunindo desenvolvimento, banco de dados, testes e infraestrutura em um único projeto.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="stack-wrapper">
+                    <div class="section-header compact">
+                        <div>
+                            <p class="section-kicker">STACK UTILIZADA</p>
+                            <h3>Tecnologias do El Patrón</h3>
+                        </div>
+                    </div>
                     <div class="stack-grid">
-                        <div class="stack-item"><strong>Backend / API</strong><span>Python 3.11 • Flask 3.1 • Flask-SQLAlchemy • Flask-Login • Flask-WTF</span></div>
-                        <div class="stack-item"><strong>Frontend</strong><span>React 19 • Vite</span></div>
-                        <div class="stack-item"><strong>Banco de dados</strong><span>PostgreSQL 17</span></div>
-                        <div class="stack-item"><strong>Migrations</strong><span>Flask-Migrate • Alembic</span></div>
-                        <div class="stack-item"><strong>Servidor / TLS</strong><span>Caddy 2 • HTTPS automático • HTTP/2</span></div>
-                        <div class="stack-item"><strong>Infraestrutura</strong><span>VPS Hostinger • Ubuntu 24.04 • Docker Compose</span></div>
-                        <div class="stack-item"><strong>Observabilidade</strong><span>Sentry para erros da aplicação e monitoramento</span></div>
-                        <div class="stack-item"><strong>Backup</strong><span>pg_dump • retenção • Backblaze B2</span></div>
-                        <div class="stack-item"><strong>Testes / CI</strong><span>Pytest • Vitest • Playwright • GitHub Actions</span></div>
+                        <article class="stack-card"><span>Backend / API</span><strong>Python 3.11</strong><small>Flask 3.1 • Flask-SQLAlchemy • Flask-Login • Flask-WTF</small></article>
+                        <article class="stack-card"><span>Frontend</span><strong>React 19</strong><small>Vite</small></article>
+                        <article class="stack-card"><span>Banco de dados</span><strong>PostgreSQL 17</strong><small>Persistência da aplicação</small></article>
+                        <article class="stack-card"><span>Migrations</span><strong>Flask-Migrate</strong><small>Alembic</small></article>
+                        <article class="stack-card"><span>Servidor / TLS</span><strong>Caddy 2</strong><small>HTTPS automático • HTTP/2</small></article>
+                        <article class="stack-card"><span>Infraestrutura</span><strong>Docker Compose</strong><small>VPS Hostinger • Ubuntu 24.04</small></article>
+                        <article class="stack-card"><span>Observabilidade</span><strong>Sentry</strong><small>Erros da aplicação e monitoramento</small></article>
+                        <article class="stack-card"><span>Backup</span><strong>pg_dump</strong><small>Retenção • Backblaze B2</small></article>
+                        <article class="stack-card"><span>Testes / CI</span><strong>Pytest</strong><small>Vitest • Playwright • GitHub Actions</small></article>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
-                <div class="section-heading">
-                    <span class="section-kicker">TECNOLOGIAS</span>
-                    <h2>Ferramentas com as quais desenvolvo</h2>
+            <section id="tecnologias" class="section section-anchor technologies-section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">TECNOLOGIAS</p>
+                        <h2>Ferramentas com as quais desenvolvo</h2>
+                        <p class="section-subtitle">Tecnologias com as quais estudo e desenvolvo projetos práticos.</p>
+                    </div>
                 </div>
-                <p class="section-description">Tecnologias com as quais estudo e desenvolvo projetos práticos.</p>
-                <div id="skills-container">
-                    <div class="skills-box">
-                        <p class="skills-title">Front-End</p>
-                        <i class="devicon-html5-plain colored" title="HTML5"></i>
-                        <i class="devicon-css3-plain colored" title="CSS3"></i>
-                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                        <i class="devicon-react-original colored" title="React"></i>
-                    </div>
-                    <div class="skills-box">
-                        <p class="skills-title">Back-End</p>
-                        <i class="devicon-python-plain colored" title="Python"></i>
-                        <i class="devicon-flask-original colored" title="Flask"></i>
-                    </div>
-                    <div class="skills-box">
-                        <p class="skills-title">Banco & Infra</p>
-                        <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
-                        <i class="devicon-docker-plain colored" title="Docker"></i>
-                        <i class="devicon-linux-plain colored" title="Linux"></i>
-                        <i class="devicon-git-plain colored" title="Git"></i>
-                    </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-heading"><span>01</span><h3>Front-End</h3></div>
+                        <div class="skill-icons">
+                            <div><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                            <div><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                            <div><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                            <div><i class="devicon-react-original colored"></i><span>React</span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-heading"><span>02</span><h3>Back-End</h3></div>
+                        <div class="skill-icons">
+                            <div><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                            <div><i class="devicon-flask-original"></i><span>Flask</span></div>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-heading"><span>03</span><h3>Banco & Infra</h3></div>
+                        <div class="skill-icons">
+                            <div><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                            <div><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                            <div><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+                            <div><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                        </div>
+                    </article>
                 </div>
             </section>
 
-            <section id="contact" class="section contact-section">
-                <div>
-                    <span class="section-kicker">CONTATO</span>
-                    <h2>Vamos conversar?</h2>
-                    <p>Se você tem um projeto, uma oportunidade ou quer trocar uma ideia sobre desenvolvimento, entre em contato.</p>
+            <section id="contato" class="section section-anchor contact-section">
+                <div class="contact-card">
+                    <div>
+                        <p class="section-kicker">CONTATO</p>
+                        <h2>Vamos conversar?</h2>
+                        <p>
+                            Se você tem um projeto, uma oportunidade ou quer trocar uma ideia sobre desenvolvimento,
+                            entre em contato.
+                        </p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="https://wa.me/5545998237161" target="_blank" rel="noopener"><ion-icon name="logo-whatsapp"></ion-icon><span>WhatsApp</span></a>
+                        <a href="mailto:leonardobandasshow@gmail.com"><ion-icon name="mail-outline"></ion-icon><span>E-mail</span></a>
+                        <a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener"><ion-icon name="logo-linkedin"></ion-icon><span>LinkedIn</span></a>
+                        <a href="https://github.com/LeonardoArnold" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span>GitHub</span></a>
+                    </div>
                 </div>
-                <div class="contact-actions">
-                    <a href="https://wa.me/5545998237161" target="_blank" rel="noopener"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
-                    <a href="mailto:leonardobandasshow@gmail.com"><ion-icon name="mail-outline"></ion-icon> E-mail</a>
-                    <a href="https://www.linkedin.com/in/leonardoarnold/" target="_blank" rel="noopener"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a>
-                </div>
+                <footer>Leonardo Arnold <span>•</span> Engenharia de Software • 2026</footer>
             </section>
-        </section>
-    </main>
+        </main>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
